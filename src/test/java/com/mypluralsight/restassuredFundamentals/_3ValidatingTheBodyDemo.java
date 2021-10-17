@@ -17,7 +17,7 @@ public class _3ValidatingTheBodyDemo {
     void jsonPathReturnsMap() {
         Response response = RestAssured.get(BASE_URL);
 
-        ResponseBody body = response.getBody();
+        ResponseBody<?> body = response.getBody();
         response.prettyPeek();
 
         JsonPath jPath = body.jsonPath();
