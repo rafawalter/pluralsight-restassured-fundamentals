@@ -34,7 +34,7 @@ public class _2ValidatableResponseDemo {
                 .statusCode(200)
                 .statusCode(Matchers.lessThan(300))
                 .header("cache-control", Matchers.containsStringIgnoringCase("max-age=60"))
-                .time(Matchers.lessThan(2L), TimeUnit.SECONDS)
+                .time(Matchers.lessThan(10L), TimeUnit.SECONDS)
                 .header("etag", Matchers.notNullValue())
                 .header("etag", Matchers.not(Matchers.emptyString()));
     }
