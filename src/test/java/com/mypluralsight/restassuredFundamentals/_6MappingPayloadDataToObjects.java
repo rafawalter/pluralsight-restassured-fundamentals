@@ -25,4 +25,5 @@ public class _6MappingPayloadDataToObjects {
         assertEquals(user.getId(), 19369327);
         assertEquals(user.getPublicRepos(), 2);
     }
+
 }
